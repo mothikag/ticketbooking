@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+            
+    function start()
+    {
+      document.getElementById("mform").addEventListener("submit",subfunc,false);
+    }
+    function subfunc()
+    {
+ 
+      window.alert("The form was submitted");
+      window.alert("Thank you");
+    }
+    
+function myFunction() {
+  document.getElementById("myTime").defaultValue = "18:00";
+}
+
+    </script>
+</head>
+  <head>
+    <body style="background-color:aliceblue ;">  
+      
+    <form action="http://localhost:4000/register" method="post">
+    
+        <center><h1 style="font-style: italic;color: maroon;font-size: x-large;">TICKET BOOKING FORM</h1></center>
+              <div class="form-group">
+          <label for="exampleFormControlInput1">Name</label>
+          <input type="NAME" class="form-control" id="exampleFormControlInput1" placeholder="name" name="name"><br>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Reg No</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="regno" name="regno"><br>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Department</label>
+            <select class="form-control" id="exampleFormControlInput1" name="department">
+                <option>ctpg</option>
+                                <option>Bsc</option>
+                                <option>foodtech</option>
+                            </select>
+                        </div>
+          </div><br>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="abc@gmail.com" name="email"><br>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Event Date</label>
+            <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="Enter Date" name="eventdate"><br>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Event Time</label>
+            <input type="time" class="form-control" id="myTime" placeholder="Enter Time" value="16:32:55" name="eventtime"><br>
+          </div>
+
+          <div>
+            <label for="name">Gender</label><br>
+            <input type="radio" id="contactChoice1"
+             value="male" name="gender">
+            <label for="contactChoice1">Male</label>
+        
+            <input type="radio" id="contactChoice2"
+             value="female"  name="gender">
+            <label for="contactChoice2">Female</label>
+          </div><br>
+          <div class="form-group">
+            <label for="inputAddress">Phone no</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="" name="phno"><br>
+            </div>
+
+        <button type="submit" class="btn btn-primary" onclick="subfunc()">book now!</button>
+      </form>
+    </body>
+  </head>
+</html>
